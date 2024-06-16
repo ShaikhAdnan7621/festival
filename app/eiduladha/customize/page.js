@@ -30,13 +30,14 @@ export default function CreateEidLink() {
                     >
                         Your Name
                     </label>
+                  
                     <input
-                        id="name"
+                        id="toName"
                         type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
-                        placeholder="Enter your name"
-                        className="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 shadow-lg"
+                        value={toName}
+                        onChange={(e) => setToName(e.target.value)}
+                        placeholder="Enter recipient's name"
+                        className="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md  focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 shadow-lg"
                     />
                 </div>
                 <div className="mb-6">
@@ -46,13 +47,13 @@ export default function CreateEidLink() {
                     >
                         Name of the person you want to send to
                     </label>
-                    <input
-                        id="toName"
+                              <input
+                        id="name"
                         type="text"
-                        value={toName}
-                        onChange={(e) => setToName(e.target.value)}
-                        placeholder="Enter recipient's name"
-                        className="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md  focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 shadow-lg"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                        placeholder="Enter your name"
+                        className="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 shadow-lg"
                     />
                 </div>
                 <button
