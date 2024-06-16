@@ -8,9 +8,9 @@ export default function CreateEidLink() {
     const [generatedLink, setGeneratedLink] = useState("");
 
     const handleLinkCreation = () => {
-        const link = `http://localhost:3000/eiduladha?name=${encodeURIComponent(
-            name,
-        )}&toname=${encodeURIComponent(toName)}`;
+        let domain = window.location.origin;
+        // ?name=arsalan&toName=hello
+        let link = `${domain}/eiduladha?name=${name}&toName=${toName}`;
         setGeneratedLink(link);
     };
 
