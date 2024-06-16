@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* pabdulam animation  */
+
+.pabdulam {
+    animation: pabdulam 3s ease-in-out infinite;
+    transform-origin: top center; /* Set rotation origin to top center */
+}
+
+@keyframes pabdulam {
+    0% {
+        transform: rotate(2deg);
+    }
+
+    50% {
+        transform: rotate(-2deg);
+    }
+
+    100% {
+        transform: rotate(2deg);
+    }
+}
+
