@@ -30,7 +30,7 @@ export default function CreateEidLink() {
                     >
                         Your Name
                     </label>
-                  
+
                     <input
                         id="toName"
                         type="text"
@@ -47,7 +47,7 @@ export default function CreateEidLink() {
                     >
                         Name of the person you want to send to
                     </label>
-                              <input
+                    <input
                         id="name"
                         type="text"
                         value={name}
@@ -105,7 +105,6 @@ export default function CreateEidLink() {
                     className="object-top  "
                 />
             </div>
-        
         </div>
     );
 }
