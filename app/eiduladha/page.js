@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 
 export default function page(obj) {
-    const { name, toname } = obj.searchParams;
+    const { name, toName } = obj.searchParams;
 
     return (
         <div className=" w-screen h-screen overflow-hidden ">
@@ -16,12 +16,12 @@ export default function page(obj) {
                             <h1 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-wider mb-4">
                                 Eid Mubarak,{" "}
                                 <span className="text-yellow-300 capitalize">
-                                    {name}
+                                    {toName}
                                 </span>
                                 , Wishing you and your family a Happy Eid
                                 ul-adha from{" "}
                                 <span className="text-yellow-300  capitalize">
-                                    {toname}
+                                    {name}
                                 </span>
                                 .
                             </h1>
