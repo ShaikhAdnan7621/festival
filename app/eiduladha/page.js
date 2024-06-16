@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function page(obj) {
@@ -55,7 +56,29 @@ export default function page(obj) {
                         className=" object-center object-cover  "
                     />
                 </div>
-                
+                <div className="absolute bottom-2 right-2 z-10">
+                    <div className="h-12 w-40 rounded-full border box-content shadow-lg px-0.5 hover:scale-105 duration-300 transition  ease-in-out">
+                        <Link
+                            href="/eiduladha/customize"
+                            passHref
+                            className="w-full h-full flex items-center gap-1"
+                        >
+                            <span className=" shadow-sm rounded-full bg-black/30">
+                                <Image
+                                    src="/eid/customize1.png"
+                                    alt="Customize"
+                                    width={45}
+                                    height={45}
+                                    objectFit="cover"
+                                    className="rounded-full"
+                                />
+                            </span>
+                            <span className="font-bold text-xl text-yellow-300  ">
+                                Customize
+                            </span>
+                        </Link>
+                    </div>
+                </div>
             </div>
         </div>
     );
